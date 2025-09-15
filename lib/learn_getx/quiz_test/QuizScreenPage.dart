@@ -7,7 +7,11 @@ class QuizScreenPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var controller= Get.put(QuizScreenPageController());
-    return Scaffold(body: Center(child: Text(controller.model)));
+    var controller = Get.put(QuizScreenPageController());
+    return Scaffold(
+      body: Column(
+        children: [Text("Question"), Center(child: Text(controller.model))],
+      ),
+    );
   }
 }
