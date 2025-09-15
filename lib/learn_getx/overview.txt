@@ -1,0 +1,10 @@
+// Home page > Java , C++, HTML
+
+//Requirement
+Subject(Subject name,code),Question(Question,options[4p],correct_option,sub_code)
+
+_____________________________________________________
+
+//Quiz Page > 10(Q) -> each question should have 4 options -> Next -> last 10(Q) -> submit
+
+//Score ->  PQ(10) -> Total -> 100 -> Score out of 100 -> 40 (FAIL) > Pass > 50 (B) > 70(S) > (G) -> Start from beginning
