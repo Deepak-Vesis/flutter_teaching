@@ -8,6 +8,8 @@ import 'package:get/get.dart';
 class QuizHomePage extends StatelessWidget {
   const QuizHomePage({super.key});
 
+
+
   @override
   Widget build(BuildContext context) {
     var controller = Get.put(QuizHomePageController());
