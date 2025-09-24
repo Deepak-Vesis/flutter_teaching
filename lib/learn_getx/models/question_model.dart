@@ -1,3 +1,4 @@
+
 class QuestionModel {
   String question;
   List<Option> options;
@@ -10,6 +11,7 @@ class QuestionModel {
 class Option {
   int optionNumber;
   String option;
+  bool? isCorrect;
 
-  Option(this.optionNumber, this.option);
+  Option({required this.optionNumber, required this.option, this.isCorrect=false});
 }

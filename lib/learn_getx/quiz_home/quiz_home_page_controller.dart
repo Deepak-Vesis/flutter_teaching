@@ -12,14 +12,14 @@ class QuizHomePageController extends GetxController {
   // JAVA Questions
   List<QuestionModel> javaQ = javaQData;
 
-  // C++ Questions
-  List<QuestionModel> cppQ = cppQData;
-
-  // Dart Questions
-  List<QuestionModel> dartQ = dartQData;
-
-  // HTML Questions
-  List<QuestionModel> htmlQ = htmlQData;
+  // // C++ Questions
+  // List<QuestionModel> cppQ = cppQData;
+  //
+  // // Dart Questions
+  // List<QuestionModel> dartQ = dartQData;
+  //
+  // // HTML Questions
+  // List<QuestionModel> htmlQ = htmlQData;
   
   List<InfoModel> statusInfo=[
     InfoModel("Rank", "42"),

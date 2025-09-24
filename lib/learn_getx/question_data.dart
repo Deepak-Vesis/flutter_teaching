@@ -17,10 +17,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "What is Java?",
     List.of([
-      Option(1, "Coffee brand"),
-      Option(2, "Programming language"),
-      Option(3, "Operating system"),
-      Option(4, "Database"),
+      Option(optionNumber: 1, option:  "Coffee brand",),
+      Option(optionNumber: 2, option:  "Programming language",isCorrect: true),
+      Option(optionNumber: 3, option:  "Operating system"),
+      Option(optionNumber: 4, option:  "Database"),
     ], growable: false),
     2,
     "J101",
@@ -29,10 +29,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Who developed Java?",
     List.of([
-      Option(1, "James Gosling"),
-      Option(2, "Guido van Rossum"),
-      Option(3, "Dennis Ritchie"),
-      Option(4, "Bjarne Stroustrup"),
+      Option(optionNumber: 1, option:  "James Gosling",isCorrect: true),
+      Option(optionNumber: 2, option:  "Guido van Rossum"),
+      Option(optionNumber: 3, option:  "Dennis Ritchie"),
+      Option(optionNumber: 4, option:  "Bjarne Stroustrup"),
     ], growable: false),
     1,
     "J101",
@@ -41,10 +41,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which company first released Java?",
     List.of([
-      Option(1, "Microsoft"),
-      Option(2, "Sun Microsystems"),
-      Option(3, "Oracle"),
-      Option(4, "IBM"),
+      Option(optionNumber: 1,option:  "Microsoft"),
+      Option(optionNumber: 2,option:  "Sun Microsystems"),
+      Option(optionNumber: 3,option:  "Oracle"),
+      Option(optionNumber: 4,option:  "IBM"),
     ], growable: false),
     2,
     "J101",
@@ -53,10 +53,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which keyword is used to inherit a class in Java?",
     List.of([
-      Option(1, "implements"),
-      Option(2, "extends"),
-      Option(3, "inherits"),
-      Option(4, "super"),
+      Option(optionNumber: 1,option:  "implements"),
+      Option(optionNumber: 2,option:  "extends"),
+      Option(optionNumber: 3,option:  "inherits"),
+      Option(optionNumber: 4,option:  "super"),
     ], growable: false),
     2,
     "J101",
@@ -65,10 +65,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which of these is not a Java feature?",
     List.of([
-      Option(1, "Platform Independent"),
-      Option(2, "Object-Oriented"),
-      Option(3, "Pointer Arithmetic"),
-      Option(4, "Robust"),
+      Option(optionNumber: 1,option:  "Platform Independent"),
+      Option(optionNumber: 2,option:  "Object-Oriented"),
+      Option(optionNumber: 3,option:  "Pointer Arithmetic"),
+      Option(optionNumber: 4,option:  "Robust"),
     ], growable: false),
     3,
     "J101",
@@ -77,10 +77,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "What is JVM?",
     List.of([
-      Option(1, "Java Virtual Machine"),
-      Option(2, "Java Visual Model"),
-      Option(3, "Java Verified Module"),
-      Option(4, "Java Value Manager"),
+      Option(optionNumber: 1,option:  "Java Virtual Machine"),
+      Option(optionNumber: 2,option:  "Java Visual Model"),
+      Option(optionNumber: 3,option:  "Java Verified Module"),
+      Option(optionNumber: 4,option:  "Java Value Manager"),
     ], growable: false),
     1,
     "J101",
@@ -89,10 +89,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which symbol is used to terminate a statement in Java?",
     List.of([
-      Option(1, ";"),
-      Option(2, ":"),
-      Option(3, "."),
-      Option(4, ","),
+      Option(optionNumber: 1,option:  ";"),
+      Option(optionNumber: 2,option:  ":"),
+      Option(optionNumber: 3,option:  "."),
+      Option(optionNumber: 4,option:  ","),
     ], growable: false),
     1,
     "J101",
@@ -101,10 +101,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which of these is used for comments in Java?",
     List.of([
-      Option(1, "//"),
-      Option(2, "/* */"),
-      Option(3, "///"),
-      Option(4, "Both 1 and 2"),
+      Option(optionNumber: 1,option:  "//"),
+      Option(optionNumber: 2,option:  "/* */"),
+      Option(optionNumber: 3,option:  "///"),
+      Option(optionNumber: 4,option:  "Both 1 and 2"),
     ], growable: false),
     4,
     "J101",
@@ -113,10 +113,10 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which access modifier makes members visible only within a package?",
     List.of([
-      Option(1, "private"),
-      Option(2, "protected"),
-      Option(3, "public"),
-      Option(4, "default"),
+      Option(optionNumber: 1,option:  "private"),
+      Option(optionNumber: 2,option:  "protected"),
+      Option(optionNumber: 3,option:  "public"),
+      Option(optionNumber: 4,option:  "default"),
     ], growable: false),
     4,
     "J101",
@@ -125,16 +125,17 @@ List<QuestionModel> javaQData = [
   QuestionModel(
     "Which data type is used to store characters in Java?",
     List.of([
-      Option(1, "char"),
-      Option(2, "String"),
-      Option(3, "Character"),
-      Option(4, "text"),
+      Option(optionNumber: 1,option:  "char"),
+      Option(optionNumber: 2,option:  "String"),
+      Option(optionNumber: 3,option:  "Character"),
+      Option(optionNumber: 4,option:  "text"),
     ], growable: false),
     1,
     "J101",
   ),
 ];
 
+/*
 // C++ Questions
 List<QuestionModel> cppQData = [
   QuestionModel(
@@ -503,3 +504,4 @@ List<QuestionModel> htmlQData = [
     "H-104",
   ),
 ];
+*/

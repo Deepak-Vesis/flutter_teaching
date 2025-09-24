@@ -2,13 +2,15 @@ import 'dart:async';
 
 import 'package:get/get.dart';
 
+import '../question_data.dart';
+
 class QuizScreenPageController extends GetxController {
-  // late String model;
+  RxInt count = 20.obs;
 
-  // RxInt count = 10.obs;
-  int count_G = 20;
+  int curIdx = 0;
+  var questionData = javaQData;
+  var currentQuestion = javaQData[0].obs;
 
-  // int count = 0;
   late Timer timer;
 
   @override
@@ -22,17 +24,24 @@ class QuizScreenPageController extends GetxController {
 
   _setTimer() {
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
-      if ( count_G == 0) timer.cancel();
+      if (count.value == 1) timer.cancel();
       // count--;
-      count_G--;
+      count--;
       update();
       // print(count);
-      print(count_G);
+      // print(count);
     });
 
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 20), () {
       print("Mai amar hu");
     });
+  }
+
+  onNextClick() {
+    print("I'm call");
+    if (curIdx < questionData.length) {
+      currentQuestion.value = javaQData[curIdx++];
+    }
   }
 
   @override
